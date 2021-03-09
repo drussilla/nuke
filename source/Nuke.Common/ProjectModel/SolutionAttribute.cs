@@ -45,6 +45,10 @@ namespace Nuke.Common.ProjectModel
         }
 
         public override bool List { get; set; }
+        public bool GenerateProjects { get; set; }
+        public string ProjectPostfix { get; set; } = "Project";
+        public string ProjectTrimPrefix { get; set; } = string.Empty;
+        public string ProjectSubType { get; set; }
 
         public override object GetValue(MemberInfo member, object instance)
         {
